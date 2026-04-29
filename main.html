@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Académico | EduSmart</title>
+    <link rel="
+          sheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="dashboard.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <header class="dashboard-header">
+        <div class="buscador">
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="Buscar cursos, tareas o mensajes...">
+        </div>
+        <div class="header-actions">
+            <div class="icono-notificaciones">
+                <i class="far fa-bell"></i>
+                <span class="badge-num">4</span>
+            </div>
+            <div class="user-dropdown">
+                <div class="user-button">
+                    <span class="nombre-usuario">Mariana Salazar</span>
+                    <span class="avatar-icono"><i class="fas fa-user-circle"></i></span>
+                    <i class="fas fa-chevron-down flecha-abajo"></i>
+                </div>
+                <nav class="dropdown-contenido">
+                    <a href="perfil.html"><i class="fas fa-id-card"></i> Mi perfil</a>
+                    <a href="#"><i class="fas fa-chart-line"></i> Mi progreso</a>
+                    <a href="#"><i class="fas fa-cog"></i> Preferencias</a>
+                    <a href="login.html" class="cerrar-sesion-item"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar-nav">
+        <div class="logo-area">
+            <h2>EduSmart</h2>
+        </div>
+        <ul class="menu-lista">
+            <li class="activo"><a href="main.html"><i class="fas fa-tachometer-alt"></i> Inicio</a></li>
+            <li><a href="#"><i class="fas fa-envelope-open-text"></i> Mensajes</a></li>
+            <li><a href="#"><i class="fas fa-chart-pie"></i> Resumen actividad</a></li>
+            <li><a href="#"><i class="fas fa-chart-simple"></i> Estadísticas</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Mis cursos</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendario</a></li>
+            <li><a href="#"><i class="fas fa-folder-open"></i> Archivos</a></li>
+        </ul>
+        <div class="config-section">
+            <ul class="config-menu">
+                <li><a href="#"><i class="fas fa-sliders-h"></i> Configuración</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-area">
+
+        <div class="dashboard-grid">
+
+
+            <section id="estadisticas" class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-title"><i class="fas fa-chart-line"></i> Promedio general</div>
+                    <div class="stat-number">9.1</div>
+                    <div class="stat-footnote"><i class="fas fa-arrow-up"></i> +0.4 este período</div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-title"><i class="fas fa-user-check"></i> Asistencia</div>
+                    <div class="stat-number">96%</div>
+                    <div class="stat-footnote">2 faltas justificadas</div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-title"><i class="fas fa-tasks"></i> Tareas completadas</div>
+                    <div class="stat-number">17/20</div>
+                    <div class="stat-footnote">3 pendientes · próxima: 30/04</div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-title"><i class="fas fa-comment-dots"></i> Mensajes nuevos</div>
+                    <div class="stat-number">5</div>
+                    <div class="stat-footnote">2 sin leer de compañeros</div>
+                </article>
+            </section>
+
+
+            <section id="mensajes" class="white-panel">
+                <header class="panel-header">
+                    <h3><i class="fas fa-users"></i> Mensajes de compañeros</h3>
+                </header>
+                <div class="messages-feed">
+                    <article class="message-row">
+                        <div class="msg-avatar"><i class="fas fa-user-astronaut"></i></div>
+                        <div class="msg-body">
+                            <strong class="msg-author">Diego Acosta</strong>
+                            <p class="msg-text">Hola Mariana, ¿revisamos el proyecto de base de datos? tengo dudas sobre la normalización.</p>
+                        </div>
+                        <time class="msg-time">10:12 AM</time>
+                    </article>
+                    <article class="message-row">
+                        <div class="msg-avatar"><i class="fas fa-laptop-code"></i></div>
+                        <div class="msg-body">
+                            <strong class="msg-author">Camila Rojas</strong>
+                            <p class="msg-text">Compartí los apuntes de estadística en el drive, míralos cuando puedas.</p>
+                        </div>
+                        <time class="msg-time">Ayer 19:45</time>
+                    </article>
+                    <article class="message-row">
+                        <div class="msg-avatar"><i class="fas fa-flask"></i></div>
+                        <div class="msg-body">
+                            <strong class="msg-author">Andrés Morales</strong>
+                            <p class="msg-text">¿Te interesaría unirte al grupo de estudio para el examen de química?</p>
+                        </div>
+                        <time class="msg-time">25/04/2025</time>
+                    </article>
+                    <article class="message-row">
+                        <div class="msg-avatar"><i class="fas fa-chalkboard-user"></i></div>
+                        <div class="msg-body">
+                            <strong class="msg-author">Prof. Elena Castro</strong>
+                            <p class="msg-text">Excelente participación en la clase, sigue así. Recuerda la tutoría del jueves.</p>
+                        </div>
+                        <time class="msg-time">24/04/2025</time>
+                    </article>
+                </div>
+                <footer class="view-link">
+                    <a href="#"><i class="fas fa-comment"></i> Ver todos los mensajes</a>
+                </footer>
+            </section>
+
+            <section id="horario" class="white-panel">
+                <header class="panel-header">
+                    <h3><i class="fas fa-calendar-week"></i> Horario de clases</h3>
+                </header>
+                <ul class="schedule-list">
+                    <li><span class="schedule-time">08:00 - 10:00</span><span class="schedule-course">Matemáticas Avanzada</span><i class="fas fa-chalkboard"></i></li>
+                    <li><span class="schedule-time">10:15 - 12:00</span><span class="schedule-course">Programación Web</span><i class="fas fa-code"></i></li>
+                    <li><span class="schedule-time">12:30 - 14:00</span><span class="schedule-course">Física General</span><i class="fas fa-flask"></i></li>
+                    <li><span class="schedule-time">15:00 - 16:30</span><span class="schedule-course">Literatura Universal</span><i class="fas fa-book"></i></li>
+                    <li><span class="schedule-time">16:45 - 18:15</span><span class="schedule-course">Estadística</span><i class="fas fa-chart-simple"></i></li>
+                </ul>
+            </section>
+
+
+            <section id="tareas" class="white-panel">
+                <header class="panel-header">
+                    <h3><i class="fas fa-hourglass-half"></i> Próximas entregas y exámenes</h3>
+                </header>
+                <table class="deadline-table">
+                    <tbody>
+                        <tr><td><i class="fas fa-calendar-day"></i> 28 de abril</td><td>Entrega proyecto final Programación</td><td class="urgent">Plazo límite</td></tr>
+                        <tr><td><i class="fas fa-calendar-day"></i> 30 de abril</td><td>Cuestionario Estadística</td><td>Sin entregar</td></tr>
+                        <tr><td><i class="fas fa-calendar-day"></i> 03 de mayo</td><td>Examen parcial Física</td><td>Próximo</td></tr>
+                        <tr><td><i class="fas fa-calendar-day"></i> 06 de mayo</td><td>Ensayo Literatura</td><td>En revisión</td></tr>
+                        <tr><td><i class="fas fa-calendar-day"></i> 10 de mayo</td><td>Laboratorio Química (informe)</td><td>Grupo pendiente</td></tr>
+                    </tbody>
+                </table>
+                <footer class="view-link">
+                    <a href="#"><i class="fas fa-calendar-alt"></i> Ver calendario completo</a>
+                </footer>
+            </section>
+
+        </div>
+
+        <footer class="footer-dash">
+            <p><i class="fas fa-graduation-cap"></i> Mariana Salazar · Ciclo 2025-1 · Dashboard académico actualizado</p>
+        </footer>
+    </main>
+
+</body>
+</html>

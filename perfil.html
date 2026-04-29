@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Académico | EduSmart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="dashboard.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <header class="dashboard-header">
+        <div class="buscador">
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="Buscar cursos, tareas o mensajes...">
+        </div>
+        <div class="header-actions">
+            <div class="icono-notificaciones">
+                <i class="far fa-bell"></i>
+                <span class="badge-num">4</span>
+            </div>
+            <div class="user-dropdown">
+                <div class="user-button">
+                    <span class="nombre-usuario">Mariana Salazar</span>
+                    <span class="avatar-icono"><i class="fas fa-user-circle"></i></span>
+                    <i class="fas fa-chevron-down flecha-abajo"></i>
+                </div>
+                <nav class="dropdown-contenido">
+                    <a href="perfil.html"><i class="fas fa-id-card"></i> Mi perfil</a>
+                    <a href="#"><i class="fas fa-chart-line"></i> Mi progreso</a>
+                    <a href="#"><i class="fas fa-cog"></i> Preferencias</a>
+                    <a href="login.html" class="cerrar-sesion-item"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar-nav">
+        <div class="logo-area">
+            <h2>EduSmart</h2>
+        </div>
+        <ul class="menu-lista">
+            <li class="activo"><a href="main.html"><i class="fas fa-tachometer-alt"></i> Inicio</a></li>
+            <li><a href="#"><i class="fas fa-envelope-open-text"></i> Mensajes</a></li>
+            <li><a href="#"><i class="fas fa-chart-pie"></i> Resumen actividad</a></li>
+            <li><a href="#"><i class="fas fa-chart-simple"></i> Estadísticas</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Mis cursos</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendario</a></li>
+            <li><a href="#"><i class="fas fa-folder-open"></i> Archivos</a></li>
+        </ul>
+        <div class="config-section">
+            <ul class="config-menu">
+                <li><a href="#"><i class="fas fa-sliders-h"></i> Configuración</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-area">
+
+        <form action="#" method="post" class="perfil-form">
+          
+            <section class="form-card">
+                <header>
+                    <h2><i class="fas fa-user-circle"></i> Información personal</h2>
+                </header>
+                <div class="form-body">
+                    <label class="campo" for="foto">
+                        <i class="fas fa-camera"></i> Foto de perfil
+                        <span>
+                            <span class="photo-preview"><i class="fas fa-user-astronaut"></i></span>
+                            <input type="file" id="foto" accept="image/*">
+                        </span>
+                    </label>
+
+                    <label class="campo" for="nombre">
+                        <i class="fas fa-user"></i> Nombre
+                        <span>
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" id="nombre" value="Mariana" placeholder="Nombre">
+                        </span>
+                    </label>
+
+                    <label class="campo" for="apellidos">
+                        <i class="fas fa-user-tag"></i> Apellidos
+                        <span>
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" id="apellidos" value="Salazar López" placeholder="Apellidos">
+                        </span>
+                    </label>
+
+                    <label class="campo" for="email">
+                        <i class="fas fa-envelope"></i> Correo electrónico
+                        <span>
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="email" value="mariana.salazar@estudiante.edu">
+                        </span>
+                    </label>
+
+                    <label class="campo" for="telefono">
+                        <i class="fas fa-phone-alt"></i> Teléfono
+                        <span>
+                            <i class="fas fa-phone input-icon"></i>
+                            <input type="tel" id="telefono" value="+34 612 345 678">
+                        </span>
+                    </label>
+
+                    <label class="campo" for="fecha_nac">
+                        <i class="fas fa-calendar-alt"></i> Fecha de nacimiento
+                        <span>
+                            <i class="fas fa-calendar input-icon"></i>
+                            <input type="date" id="fecha_nac" value="2002-05-14">
+                        </span>
+                    </label>
+
+                    <fieldset class="campo">
+                        <legend><i class="fas fa-venus-mars"></i> Género</legend>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="femenino" checked> Femenino</label>
+                            <label><input type="radio" name="gender" value="masculino"> Masculino</label>
+                            <label><input type="radio" name="gender" value="otro"> Prefiero no decir</label>
+                        </div>
+                    </fieldset>
+
+                    <label class="campo" for="pais">
+                        <i class="fas fa-globe"></i> País
+                        <select id="pais">
+                            <option>España</option>
+                            <option>México</option>
+                            <option>Argentina</option>
+                            <option>Colombia</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+
+            <section class="form-card">
+                <header>
+                    <h2><i class="fas fa-graduation-cap"></i> Biografía del estudiante</h2>
+                </header>
+                <div class="form-body">
+                    <label for="biografia">
+                        <i class="fas fa-pen-fancy"></i> Biografía
+                        <textarea id="biografia" rows="3">Estudiante de Ingeniería Informática, apasionada por la IA y el desarrollo web.</textarea>
+                    </label>
+
+                    <fieldset>
+                        <legend><i class="fas fa-heart"></i> Intereses</legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> Programación</label>
+                            <label><input type="checkbox" checked> Matemáticas</label>
+                            <label><input type="checkbox"> Literatura</label>
+                            <label><input type="checkbox" checked> IA</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </section>
+
+            <section class="form-card">
+                <header>
+                    <h2><i class="fas fa-sliders-h"></i> Preferencias</h2>
+                </header>
+                <div class="form-body">
+                    <fieldset>
+                        <legend><i class="fas fa-bell"></i> Notificaciones</legend>
+                        <div class="radio-group">
+                            <label><input type="radio" name="notif" checked> Todas</label>
+                            <label><input type="radio" name="notif"> Solo importantes</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><i class="fas fa-check-circle"></i> Privacidad</legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> Mostrar email a compañeros</label>
+                            <label><input type="checkbox" checked> Recibir recordatorios</label>
+                        </div>
+                    </fieldset>
+
+                </div>
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary"><i class="fas fa-undo-alt"></i> Restablecer</button>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Guardar cambios</button>
+                </div>
+
+            </section>
+        </form>
+
+        <footer class="footer-dash">
+            <p><i class="fas fa-graduation-cap"></i> Mariana Salazar · Ciclo 2025-1 · Dashboard académico actualizado</p>
+        </footer>
+    </main>
+
+</body>
+</html>
